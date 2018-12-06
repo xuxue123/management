@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0; 
+    /* height: 100%; */
+}
+html {
+    -ms-overflow-style:none;
+    overflow:-moz-scrollbars-none;
+    }
+    html::-webkit-scrollbar{
+        width:0px
+    }
+html {
+    font-family: "微软雅黑";
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    overflow: hidden;
+}
+li{
+    list-style: none;
+}
+body {
+    /* background: url("../img/bg1.png") 100%; */
+    background-color: #004b8b;
+    position: relative;
+    font-family: "微软雅黑";
+}
+canvas{
+    width: 673px;
+    height: 288px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="./css/bootstrap-responsive.css"> -->
+    <!-- <link rel="stylesheet" href="./css/bootstrap-theme.min.css"> -->
+    <link rel="stylesheet" href="./css/bootstrap-switch.min.css">
+    <link rel="stylesheet" href="./css/control.css">
+</head>
+
+<body>
+    <ul class="control_list">
+    </ul>
+
+
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap-switch.min.js"></script>
+    <script>
+        for (let i = 0; i < 10; i++) {
+            $(".control_list").append(
+                `<li class="long_control">
+             <img src="./img/风机.png" alt="">
+             <div class="longControl_data">
+                 <p style="height:1rem;font-size: 10px;margin-left:30%">排风机</p>
+                 <ul class="select_list">
+                  <li><button style="border:none;background:#fff">自动</button></li>
+                <li> <button style="border:none;background: #00ff00;margin-left:4px;">手动</button></li>
+                 <li>
+                    <div class="bootstrap-switch bootstrap-switch-mini" style="margin-left:4px">
+                    <input name="status" type="checkbox" data-size="mini">
+                    </div>
+                    </li>
+      </ul>
+                </div>
+         </li>`
+            )
+        }
+        $('[name="status"]').bootstrapSwitch({
+		onText:"ON",
+		offText:"OFF",
+		onColor:"success",
+		offColor:"info",
+		size:"Mini",
+		onSwitchChange:function(event,state){
+			if(state==true){
+				$(this).val("1");
+			}else{
+				$(this).val("2");
+			}
+		}
+	})
+
+    </script>
+</body>
+
+</html>

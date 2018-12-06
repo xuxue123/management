@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-width: 1200px;
+}
+
+html {
+    font-family: "微软雅黑";
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    background: url("../img/2.5D立体几何线性城市科技感可商用元素.png") no-repeat;
+    background-size: cover;
+    background-color: rgba(59, 160, 246, 0.6);
+    position: relative;
+    font-family: "微软雅黑";
+}
+.container{
+    margin-top: 180px;
+}
+.form {
+   background: rgba(69, 246, 252, 0.2);
+    width: 400px;
+    margin: 100px auto;
+    z-index: 1;
+}
+#login_form{
+    width: 260px;
+    padding: auto;
+}
+#login_form {
+    display: block;
+}
+.glyphicon {
+    display: inline-block;
+    top: 27px;
+    left: 6px;
+    position: relative;
+    color: #ccc;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding-left: 26px;
+}
+
+.checkbox {
+    padding-left: 21px;
+}
+.form-control{
+    width: 240px;
+}

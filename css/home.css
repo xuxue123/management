@@ -1,0 +1,632 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: url("../img/bg1.png") 100%;
+    background-color: #004b8b;
+    position: relative;
+    font-family: "微软雅黑";
+}
+
+html {
+    font-family: "微软雅黑";
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+.navbar-header {
+    min-width: 1200px;
+    width: 120px;
+}
+
+.dropdown-menu {
+    background-color: #004b8b;
+    top: 60%
+}
+
+.dropdown-menu li {
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header {
+    min-width: 1200px;
+    height: 64px;
+}
+
+.base {
+    width: 16%;
+    float: left;
+    margin-top: 20px;
+    margin-left: 46px;
+}
+
+.base img {
+    float: left;
+}
+
+.dropdown {
+    float: left;
+}
+
+.dropdown-menu {
+    background: #004b8b;
+    top: 86%;
+    display: none;
+}
+
+.dropdown-menu li {
+    text-align: center;
+    color: #fff;
+}
+
+.logo {
+    float: left;
+    width: 40%;
+    margin-top: 20px;
+    position: relative;
+    margin-left: 150px;
+}
+
+.logo1 {
+    position: absolute;
+    top: 4px;
+    left: 35%;
+}
+
+.nav {
+    width: 20%;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.nav li a img {
+    background: transparent;
+}
+
+.nav li a :hover {
+    background: transparent;
+}
+
+.content {
+    min-width: 1200px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.content_left {
+    min-width: 58%;
+    width: 62%;
+    margin-left: 16px;
+    float: left;
+    position: relative;
+}
+
+.information {
+    width: 98%;
+    height: 69%;
+}
+
+.content_right {
+    margin-left: 10px;
+    min-width: 35%;
+    /* min-height:1024px; */
+    width: 35%;
+    float: left;
+}
+
+/* 实时数据 */
+.details {
+    width: 93%;
+    position: absolute;
+    top: 6px;
+    left: 4%;
+    color: #fff;
+}
+
+.details p {
+    font-size: 14px;
+    float: left;
+}
+
+.details_data {
+    width: 93%;
+    margin-top: 30px;
+    margin-right: 10px;
+    height: 53%;
+    position: absolute;
+    top: 12px;
+    left: 2%;
+}
+
+.details_data::-webkit-scrollbar {
+    display: none;
+}
+
+li {
+    list-style: none;
+}
+
+.icon {
+    width: 13%;
+    height: 20px;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.icon li {
+    margin-right: 14px
+}
+
+/* 视频 */
+.video {
+    width: 100%;
+    height: 40%;
+    position: relative;
+}
+
+.video_play {
+    width: 93%;
+    position: absolute;
+    top: 6px;
+    left: 4%;
+    color: #fff;
+}
+
+.video_data {
+    width: 93%;
+    margin-top: 30px;
+    margin-right: 10px;
+    height: 80%;
+    position: absolute;
+    top: 10px;
+    left: 4%;
+}
+
+.video_icon {
+    width: 23%;
+    height: 20px;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.video_icon li {
+    margin-right: 14px
+}
+
+.video_play p {
+    font-size: 14px;
+    float: left;
+}
+
+/* 气象站 */
+.weather {
+    width: 100%;
+    height: 30%;
+    position: relative;
+}
+
+.weather_play {
+    width: 93%;
+    position: absolute;
+    top: 6px;
+    left: 4%;
+    color: #fff;
+}
+
+.weather_icon {
+    width: 23%;
+    height: 20px;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.weather_icon li {
+    margin-right: 14px
+}
+
+.weather_play p {
+    font-size: 14px;
+    float: left;
+}
+
+.weather_data {
+    width: 93%;
+    margin-top: 26px;
+    margin-right: 10px;
+    height: 84%;
+    position: absolute;
+    top: 5px;
+    left: 4%;
+}
+
+/* 走势图 */
+.towards {
+    width: 60%;
+    height: 45%;
+    margin-top: 30px;
+    float: left;
+    position: relative;
+}
+
+.towards_title {
+    width: 100%;
+    height: 10%;
+}
+
+.towards_title p {
+    width: 30%;
+    float: left;
+}
+
+.towards_icon {
+    width: 20%;
+    height: 20px;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.towards_chart {
+    width: 95%;
+    margin-top: 26px;
+    margin-right: 10px;
+    height: 80%;
+    position: absolute;
+    top: 7%;
+    left: 2%;
+}
+
+/* 饼图 */
+.pie {
+    max-width: 37%;
+    height: 45%;
+    margin-top: 30px;
+    margin-left: 20px;
+    float: left;
+    position: relative;
+}
+
+.pie_title {
+    width: 100%;
+    height: 10%;
+}
+
+.pie_title p {
+    width: 30%;
+    float: left;
+}
+
+.pie_icon {
+    width: 30%;
+    height: 20px;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.pie_chart {
+    width: 95%;
+    /* margin-top: 26px;
+    margin-right: 10px; */
+    height: 83%;
+    position: absolute;
+    top: 12%;
+    left: 2%;
+}
+
+/* 远程控制 */
+.control {
+    width: 100%;
+    height: 45%;
+    position: relative;
+}
+
+.control_title {
+    width: 100%;
+    height: 10%;
+}
+
+.control_title p {
+    width: 30%;
+    float: left;
+}
+
+.control_icon {
+    width: 20%;
+    height: 20px;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.control_data {
+    width: 94%;
+    margin-top: 26px;
+    margin-right: 10px;
+    height: 85%;
+    position: absolute;
+    top: 5%;
+    left: 3%;
+}
+
+/* 弹窗 */
+.pop_up {
+    min-width: 54%;
+    height: 40rem;
+    min-height: 81%;
+    margin: auto;
+    margin-top: 100px;
+    width: 94rem;
+    /* background: url('../img/center01.png')no-repeat;  */
+    position: relative;
+}
+
+.menu_list {
+    width: 95rem;
+    max-width: 96%;
+    height: 36rem;
+    min-height: 96%;
+    position: absolute;
+    top: 0;
+    left: 1.5%;
+}
+
+.close {
+    position: absolute;
+    top: 4.5%;
+    right: 4%;
+    background: transparent;
+    z-index: 9999;
+}
+
+.data_list {
+    width: 100%;
+    color: #fff;
+    margin-top: 3%;
+    background-color: rgba(0, 78, 146, 0.7);
+    overflow-y: scroll;
+    height: 90%;
+    min-height: 93%;
+}
+
+.data_list::-webkit-scrollbar {
+    display: none;
+}
+
+.history_data {
+    width: 50%;
+}
+
+.history_list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.history_list li a p {
+    color: #fff;
+    font-size: 12px;
+    padding-top: 1%
+}
+
+.equipment_data {
+    width: 90%;
+}
+
+.equipment_list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.equipment_list li a p {
+    color: #fff;
+    font-size: 12px;
+    padding-top: 1%;
+}
+
+.basics_data {
+    width: 50%;
+}
+
+.basics_list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.basics_list li a p {
+    color: #fff;
+    font-size: 12px;
+    padding-top: 1%
+}
+
+.map_data {
+    width: 23%;
+}
+
+.map_list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.map_list li a p {
+    color: #fff;
+    font-size: 12px;
+    padding-top: 1%
+}
+
+.information_data {
+    width: 64%;
+}
+
+.information_list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.information_list li a p {
+    color: #fff;
+    font-size: 12px;
+    padding-top: 1%
+}
+
+.administrator {
+    width: 12%;
+    text-align: center;
+}
+
+.administrator a p {
+    color: #fff;
+    font-size: 12px;
+    padding-top: 1%
+}
+
+.close1 {
+    position: absolute;
+    right: 4%;
+    top: 0%;
+    background: transparent;
+    border: none;
+    z-index: 2;
+}
+
+.Mb {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 78, 146, 0.7);
+    display: none;
+    /* position: relative; */
+    /* z-index: 9000; */
+}
+
+/* 传感器历史数据 */
+.sensor_list {
+    min-width: 54%;
+    height: 60rem;
+    min-height: 81%;
+    width: 94rem;
+    position: absolute;
+    top: 70rem;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    padding: 25px;
+    display: none;
+    z-index: 9999;
+}
+
+.history_sensor {
+    width: 92%;
+    margin-top: 26px;
+    margin-right: 10px;
+    height: 86.5%;
+    position: absolute;
+    top: 3%;
+    left: 3.5%;
+}
+
+/* 设备操作日志 */
+.history_equipment {
+    min-width: 54%;
+    height: 60rem;
+    min-height: 81%;
+    width: 94rem;
+    position: absolute;
+    top: 70rem;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    padding: 25px;
+    display: none;
+    z-index: 9999;
+}
+.operation {
+    width: 92%;
+    margin-top: 26px;
+    margin-right: 10px;
+    height: 86.5%;
+    position: absolute;
+    top: 3%;
+    left: 3.5%;
+}
+/* 气象站历史数据 */
+.weather_list {
+    min-width: 54%;
+    height: 60rem;
+    min-height: 81%;
+    width: 94rem;
+    position: absolute;
+    top: 70rem;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    padding: 25px;
+    display: none;
+    z-index: 9999;
+}
+.history_weather{
+    width: 92%;
+    margin-top: 26px;
+    margin-right: 10px;
+    height: 86.5%;
+    position: absolute;
+    top: 3%;
+    left: 3.5%;
+}
+/* 报警记录 */
+.police_list {
+    min-width: 54%;
+    height: 60rem;
+    min-height: 81%;
+    width: 94rem;
+    position: absolute;
+    top: 70rem;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    padding: 25px;
+    display: none;
+    z-index: 9999;
+}

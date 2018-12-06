@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0; 
+    /* height: 100%; */
+}
+html {
+    -ms-overflow-style:none;
+    overflow:-moz-scrollbars-none;
+    }
+    html::-webkit-scrollbar{
+        width:0px
+    }
+html {
+    font-family: "微软雅黑";
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+li{
+    list-style: none;
+}
+body {
+    background-color:rgba(0,78,146,0.7);
+    position: relative;
+    font-family: "微软雅黑";
+}
+.row{
+    width: 98%;
+    margin: auto;
+}
+.refresh{
+    border: none;
+    background: transparent;
+    float: right;
+    margin-top: 12px;
+}
+.find_expend label{
+    color: #fff;
+    font-size: 14px;
+}
+.sensor_table{
+    width: 98%;
+    height: 30%;
+    margin: auto;
+    border: 1px solid #fff;
+}
+.find_expend{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.form-group input{
+ width:15%;
+}
+.form-group select{
+    width:15%;
+}
+.table_div{
+    margin: 10px 0px 10px 10px;
+}
+.bootstrap-table{
+    width: 98%;
+    margin: auto;
+    margin-top: 20px;
+}
+.table_style{
+    color: #FFFFff;
+    font-size: 13px;
+    border: 1px solid #fff; 
+}
+.table_style a{
+    margin-right: 10px;
+}
+.table_style td{
+    border: none !important;
+}
+.table_style tbody tr:nth-child(2n+1){
+    background-color: #072951;
+    box-shadow: -10px 0px 15px #034c6a inset,
+    10px 0px 15px #034c6a inset;
+}
+.table_style thead tr{
+    color:#fff;
+}
+.table_style thead th{
+    border-bottom: none !important;
+}
+.table_style tbody tr:nth-child(2n):hover{
+    color: #fff;
+    background-color: rgba(75, 141, 248, 0.12);
+}

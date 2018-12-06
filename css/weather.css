@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0; 
+    /* height: 100%; */
+}
+html {
+    -ms-overflow-style:none;
+    overflow:-moz-scrollbars-none;
+    }
+    html::-webkit-scrollbar{
+        width:0px
+    }
+html {
+    font-family: "微软雅黑";
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+li{
+    list-style: none;
+}
+body {
+    /* background: url("../img/bg1.png") 100%; */
+    background-color: #004b8b;
+    position: relative;
+    font-family: "微软雅黑";
+}
+.weather_list{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    margin-left: -2rem;
+    /* margin-top: -3rem; */
+    padding-top:4px;
+}
+.scene{
+    white-space:nowrap;
+    width:15rem;
+    height: 4.5rem;
+    max-width:48%;
+    margin-top: 2%;
+    position: relative;
+    background:rgba(255,255,255,0.3);
+}
+.scene img{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.scene_data{
+    position: absolute;
+    top:10px;
+    left:40%;
+    color: #fff;
+    text-align: center
+}

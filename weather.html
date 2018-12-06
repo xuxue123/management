@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./css/weather.css">
+</head>
+<body>
+    <ul class="weather_list">
+       <!-- <p style="height:1rem;font-size: 12px;margin-top: -1rem"></p> -->
+    </ul>
+
+
+
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script>
+    for(let i=0;i<10;i++){
+        $(".weather_list").append(`<li class="scene">
+             <img src="./img/水.png" alt="">
+             <div class="scene_data">
+                 <p style="height:1rem;font-size: 10px">空气湿度</p>
+                  <p style="height:1rem;font-size: 10px;margin-top:2px">55.90%</p>
+                </div>
+         </li>`
+        )
+    }
+    
+    
+    
+    </script>
+</body>
+</html>

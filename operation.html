@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="./css/bootstrap-table.css">
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./css/history_sensor.css">
+</head>
+
+<body>
+    <div class="history_sensor_data">
+        <div class="row">
+            <div class="heading">
+                <h1 style="width: 200px; float: left;font-size: 18px;font-weight: 700;color: #fff;">
+                    设备操作日志</h1>
+                <button class="refresh"><img src="./img/refresh.png" alt=""></button>
+            </div>
+        </div>
+        <form class="sensor_table">
+            <div class="table_find">
+                <div class="find_expend">
+                    <div class="form-group">
+                        <label>MAC编号：</label><input type="text" />
+                    </div>
+                    <div class="form-group">
+                    <label>记录时间：</label><input type="date" / style="margin-left: 0.7%; width:15%;"> <label style="margin-left: 15px;
+                       margin-right: 15px;">至</label><input
+                        type="date" style="margin-left: 0.7%; width:15%;" />
+                </div>
+                <div class="table_div">
+                    <button class="btn btn-info "><span class="glyphicon glyphicon-search"></span>查询</button>
+                    <button class="btn btn-info " style="margin-left:10px;"><span class="glyphicon glyphicon-export"></span>导出</button>
+                </div>
+            </div>
+    </div>
+    </form>
+            <!-- 列表 -->
+            <table id="operation_table" class="table_style table table-striped  table-hover dataTable" border="0"></table>
+    </div>
+
+
+
+
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/operation.js"></script>
+    <script src="./js/bootstrap-table.js"></script>
+    <script src="./js/bootstrap-table-zh-CN.min.js"></script>
+</body>
+
+</html>

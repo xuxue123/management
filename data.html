@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./css/data.css">
+</head>
+
+<body>
+    <ul class="list_data">
+    </ul>
+
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script>
+        for (let i = 0; i < 9; i++) {
+            $(".list_data").append(
+                `<li style="position: relative;">
+                <img src="./img/边框3.png" alt="" style="width:100%;">
+                <div id="package">
+                <div class="data_title">
+                 <div class="title">
+                  <img src="./img/首页.png" alt="">
+                  <p>1-1建筑内部中轴线南-1.4m</p>
+                  <ul class="icon">
+                   <li><a href=""><img src="./img/操作-详情.png" alt=""></a></li>
+                    <li><a href=""><img src="./img/相机.png" alt=""></a></li>
+                     <li><a href=""><img src="./img/金融走势图.png" alt=""></a></li>
+                      </ul>
+                 </div>
+             
+                  <ul class="suju"> </ul>
+             
+                </div>
+              </div> 
+                </li>`
+            );
+        }
+        for(let j=0;j<6;j++){
+            $(".suju").append(`
+            <li class="suju_list" style=" white-space:nowrap; width:10rem;max-width:100%;">
+                <img src="./img/温度计.png" alt="">
+                <div class="suju_data">
+                 <p style="height:1rem;font-size: 10px">空气温度</p>
+                  <p style="height:1rem;font-size: 10px;margin-top:-6px">10.48℃</p>
+                </div>
+            </li>
+            `)
+        }
+    </script>
+
+
+</body>
+
+</html>
